@@ -101,6 +101,7 @@ class PluginConfigurationSpec extends Specification {
             version = '1.0.0'
             cyclonedxBom {
                 schemaVersion = '1.3'
+                includeMetadataResolutions = false
             }
             dependencies {
                 implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version:'2.8.11'
@@ -138,6 +139,7 @@ class PluginConfigurationSpec extends Specification {
             version = '1.0.0'
             cyclonedxBom {
                 // No componentName override -> Use rootProject.name
+                includeMetadataResolutions = false
             }
 
             dependencies {
@@ -177,6 +179,7 @@ class PluginConfigurationSpec extends Specification {
             version = '1.0.0'
             cyclonedxBom {
                 componentName = 'customized-component-name'
+                includeMetadataResolutions = false
             }
             dependencies {
                 implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version:'2.8.11'
@@ -214,6 +217,7 @@ class PluginConfigurationSpec extends Specification {
             version = '1.0.0'
             cyclonedxBom {
                 componentVersion = '999-SNAPSHOT'
+                includeMetadataResolutions = false
             }
             dependencies {
                 implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version:'2.8.11'
@@ -252,6 +256,7 @@ class PluginConfigurationSpec extends Specification {
             version = '1.0.0'
             cyclonedxBom {
                 projectType = 'framework'
+                includeMetadataResolutions = false
             }
             dependencies {
                 implementation group: 'org.springframework.boot', name: 'spring-boot-starter-web', version:'1.5.18.RELEASE'
@@ -288,6 +293,7 @@ class PluginConfigurationSpec extends Specification {
             version = '1.0.0'
             cyclonedxBom {
                 outputFormat = 'json'
+                includeMetadataResolutions = false
             }
             dependencies {
                 implementation group: 'com.fasterxml.jackson.datatype', name: 'jackson-datatype-jsr310', version:'2.8.11'
@@ -325,6 +331,7 @@ class PluginConfigurationSpec extends Specification {
             version = '1.0.0'
             cyclonedxBom {
                 schemaVersion = '1.3'
+                includeMetadataResolutions = false
             }
             dependencies {
                 implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version:'2.15.0'
@@ -446,6 +453,7 @@ class PluginConfigurationSpec extends Specification {
             cyclonedxBom {
                 schemaVersion = '1.3'
                 skipConfigs = ['.*']
+                includeMetadataResolutions = false
             }
             dependencies {
                 implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version:'2.15.0'
@@ -482,6 +490,7 @@ class PluginConfigurationSpec extends Specification {
             cyclonedxBom {
                 schemaVersion = '1.3'
                 includeConfigs = ['.*']
+                includeMetadataResolutions = false
             }
             dependencies {
                 implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version:'2.15.0'
@@ -635,6 +644,7 @@ class PluginConfigurationSpec extends Specification {
             version = '1.0.0'
             cyclonedxBom {
                 schemaVersion = "1.6"
+                includeMetadataResolutions = false
             }
             dependencies {
                 implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version:'2.15.0'
@@ -671,6 +681,7 @@ class PluginConfigurationSpec extends Specification {
             version = '1.0.0'
             cyclonedxBom {
                 schemaVersion = "1.4"
+                includeMetadataResolutions = false
             }
             dependencies {
                 implementation group: 'org.apache.logging.log4j', name: 'log4j-core', version:'2.15.0'
